@@ -1,0 +1,8 @@
+<ul>
+  <li *ngFor="let tulos of kaikkiMedia">
+    <img [src]= "osoite + tulos.thumbnail" alt="image">
+    <h4>{{tulos.title}}</h4>
+    <p>{{tulos.description}}</p>
+    <small>Uploaded: + {{tulos.time_added}}</small>
+  </li>
+</ul>
