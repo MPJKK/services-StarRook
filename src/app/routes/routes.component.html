@@ -1,0 +1,15 @@
+<div id="widget">
+<input (keyup)="onKey($event)" type="text" placeholder="Etsi pysäkkiä...">
+<button (click)="search($event)">Etsi</button>
+<ul>
+  <li class="boksi" *ngFor="let pysakki of vastaus">
+    <h4>{{pysakki.name}}</h4>
+    <p>Bussit</p>
+    <ul>
+      <li *ngFor="let bussi of pysakki.patterns">
+        <small>{{bussi.name}}</small>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div>

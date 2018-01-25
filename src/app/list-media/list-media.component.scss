@@ -1,11 +1,11 @@
 ul{
   list-style: none;
+  display: flex;
 }
 
 ul li{
   margin-left: 20px;
   margin-bottom: 20px;
-  float:left;
   border: 1px solid black;
 }
 
